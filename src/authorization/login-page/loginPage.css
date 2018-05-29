@@ -1,0 +1,21 @@
+.root {
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.flex {
+    flex: 1;
+}
+
+.menuButton {
+    margin-left: -12;
+    margin-right: 20;
+}
+
+.LoginPage {
+
+}
+
+.bg-container {
+    background-image: url('../../assets/images/login-bg.jpg')
+}
