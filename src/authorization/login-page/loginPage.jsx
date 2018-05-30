@@ -1,37 +1,24 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { AppBar, Button, Toolbar, Typography } from '@material-ui/core';
 import './loginPage.css';
+import LoginForm from './../login-form/login-form';
 
-class LoginPage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.classes = props.classes;
-    }
-
+export default class LoginPage extends React.Component {
     render() {
         return (
-            <div className={this.classes.root}>
-                <AppBar position="static">
-                    <Toolbar>
-                        <Typography variant="title" color="inherit" className={this.classes.flex}>
+            <div className="h-100 flex">
+                <AppBar position="static" className="p-1">
+                    <Toolbar className="Toolbar">
+                        <Typography variant="title" color="inherit" className="flex-grow-1">
                             Title
                         </Typography>
                         <Button color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
-                <div className="bg-container">Hello loginpage</div>
+                <div className="bg-container flex flex-column justify-center">
+                    <LoginForm></LoginForm>
+                </div>
             </div>
         );
     }
 }
-
-LoginPage.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
-
-export default withStyles({})(LoginPage);
