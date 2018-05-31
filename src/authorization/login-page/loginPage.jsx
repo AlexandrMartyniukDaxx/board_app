@@ -10,9 +10,11 @@ export default class LoginPage extends React.Component {
                 <AppBar position="static" className="p-1">
                     <Toolbar className="Toolbar">
                         <Typography variant="title" color="inherit" className="flex-grow-1">
-                            Title
+                            Welcome to YeahBoo
                         </Typography>
-                        <Button color="inherit">Login</Button>
+                        <div>
+                            <Button color="inherit">Sign Up</Button>
+                        </div>
                     </Toolbar>
                 </AppBar>
                 <div className="bg-container flex flex-column justify-center">

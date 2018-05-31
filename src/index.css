@@ -14,3 +14,7 @@ body {
     flex-flow: column;
     justify-content: stretch;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}

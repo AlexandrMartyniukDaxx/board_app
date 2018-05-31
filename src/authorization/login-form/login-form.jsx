@@ -3,6 +3,7 @@ import { Paper, Typography, FormControl, InputLabel, Input, InputAdornment, Icon
 import './loginForm.css';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import { GoogleLogin } from 'react-google-login';
+import GoogleAuthBtn from './../google-login/google-login';
 
 export default class LoginForm extends React.Component {
     state = {
@@ -60,14 +61,12 @@ export default class LoginForm extends React.Component {
                                     </InputAdornment>
                                 } />
                         </FormControl>
-                        <div className="mt-3">
-                            <GoogleLogin
-                                style={{}}
-                                clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-                                onSuccess={this.responseGoogle}
-                                onFailure={this.responseGoogle}
-                            />
-                            <Button variant="raised" color="secondary" className="float-right" style={{ color: 'white' }}>Log In</Button>
+                        <div className="my-3 d-flex justify-content-between">
+                            <GoogleAuthBtn />
+                            <Button variant="raised" color="secondary" className="d-block" style={{ color: 'white' }}>Log In</Button>
+                        </div>
+                        <div href="#flat-buttons" className="btn-link cursor-pointer">
+                            <Typography variant="body1" align="center" style={{color: 'inherit'}}>Forgot your password?</Typography>
                         </div>
                     </form>
                 </Paper>

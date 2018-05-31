@@ -573,3 +573,51 @@
 .float-left {
     float: left;
 }
+
+
+.btn-link {
+    font-weight: 400;
+    color: #007bff;
+    background-color: transparent;
+  }
+  
+  .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .btn-link:focus, .btn-link.focus {
+    text-decoration: underline;
+    border-color: transparent;
+    box-shadow: none;
+  }
+  
+  .btn-link:disabled, .btn-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+  }
+  
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+  }
+  
+  .btn-sm, .btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  .btn-block + .btn-block {
+    margin-top: 0.5rem;
+  }
